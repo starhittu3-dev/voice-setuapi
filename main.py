@@ -1,7 +1,4 @@
-
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from deep_translator import GoogleTranslator
+import GoogleTranslator
 
 app = FastAPI(
     title="Voice Setu API",
@@ -55,4 +52,5 @@ def translate(request: TranslateRequest):
             status_code=500,
             detail=str(error)
         )
-        
+
+
