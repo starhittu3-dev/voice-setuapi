@@ -1,5 +1,4 @@
-
-from fastapi import FastAPI
+import FastAPI
 
 app = FastAPI(
     title="Voice Setu API",
@@ -24,4 +23,4 @@ def translate():
         "status": "pending",
         "message": "AI translation engine is not connected yet"
     }
-  
+
